@@ -28,21 +28,21 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
 ## Download Assignment Repositery
--Install composer and postman in your pc
--Insall any server in your pc e.g. wamp, ammps, xammp etc and start the server
--Go to the htdocs or www folder of your localhost server
--Open cmd window
--git clone https://github.com/MalikAqeelArshad/FastechAssignment.git
--after download the project open the task folder 'FastechAssignment'
--Open cmd window in project folder and run some commands;
--cmd: composer install
--cmd: php artisan migrate
--cmd: php artisan serve
+- Install composer and postman in your pc
+- Insall any server in your pc e.g. wamp, ammps, xammp etc and start the server
+- Go to the htdocs or www folder of your localhost server
+- Open cmd window
+- git clone https://github.com/MalikAqeelArshad/FastechAssignment.git
+- After download the project open the task folder 'FastechAssignment'
+- Open cmd window in project folder and run some commands;
+- cmd: composer install
+- cmd: php artisan migrate
+- cmd: php artisan serve
 
--Open postman and can register/login/logout, profile update urls with these methods (get,post,put)
--post: http://127.0.0.1:8000/api/auth/register
--post: http://127.0.0.1:8000/api/auth/login
--post: http://127.0.0.1:8000/api/auth/logout
--get: http://127.0.0.1:8000/api/auth/profile
--put: http://127.0.0.1:8000/api/auth/profile
--get: http://127.0.0.1:8000/api/auth/users (admin can see list of user)
+- Open postman and can register/login/logout, profile update urls with these methods (get,post,put)
+- post: http://127.0.0.1:8000/api/auth/register
+- post: http://127.0.0.1:8000/api/auth/login
+- post: http://127.0.0.1:8000/api/auth/logout
+- get: http://127.0.0.1:8000/api/auth/profile
+- put: http://127.0.0.1:8000/api/auth/profile
+- get: http://127.0.0.1:8000/api/auth/users (admin can see list of user)
