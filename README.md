@@ -32,8 +32,16 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 - Insall any server in your pc e.g. wamp, ammps, xammp etc and start the server
 - Go to the htdocs or www folder of your localhost server
 - Open cmd window
-- git clone https://github.com/MalikAqeelArshad/FastechAssignment.git
+- cmd: git clone https://github.com/MalikAqeelArshad/FastechAssignment.git
 - After download the project open the task folder 'FastechAssignment'
+- Configure your with mysql database in .env file
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=fastechtask
+- DB_USERNAME=root
+- DB_PASSWORD=mysql
+- 
 - Open cmd window in project folder and run some commands;
 - cmd: composer install
 - cmd: php artisan migrate
