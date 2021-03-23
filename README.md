@@ -34,7 +34,7 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 - Open cmd window
 - cmd: git clone https://github.com/MalikAqeelArshad/FastechAssignment.git
 - After download the project open the task folder 'FastechAssignment'
-- Configure your with mysql database in .env file
+- Configure with mysql database in .env file
 - DB_CONNECTION=mysql
 - DB_HOST=127.0.0.1
 - DB_PORT=3306
