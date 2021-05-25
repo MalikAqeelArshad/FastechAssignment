@@ -58,13 +58,12 @@ class AuthController extends Controller
 
 
 	public function logout(Request $request) {
-		$validator = Validator::make($request->all(), [
-            'token' => 'required'
-	    ]);
-
-	    if ($validator->fails()) {
-	        return response()->json($validator->errors(), 422);
-	    }
+		
+		if (! auth()->user()) {
+            return response()->json([
+                'token' => 'Invalid',
+            ], 422);
+        }
 		
 	    auth()->logout();
 	    return response()->json(['message' => 'User logged out successfully.']);
