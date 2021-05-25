@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Validator;
 use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -57,13 +57,28 @@ class AuthController extends Controller
 	}
 
 
-	public function logout() {
+	public function logout(Request $request) {
+		$validator = Validator::make($request->all(), [
+            'token' => 'required'
+	    ]);
+
+	    if ($validator->fails()) {
+	        return response()->json($validator->errors(), 422);
+	    }
+		
 	    auth()->logout();
 	    return response()->json(['message' => 'User logged out successfully.']);
 	}
 
 
-	public function profile() {
+	public function profile(Request $request) {
+
+		if (! auth()->user()) {
+            return response()->json([
+                'token' => 'Invalid',
+            ], 422);
+        }
+
 		if (request()->isMethod('put')) {
 			$user = auth()->user();
 			$user->first_name = request('first_name') ?? $user->first_name;
